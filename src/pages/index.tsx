@@ -46,10 +46,10 @@ return (
       <table className="mt-8 w-full border-collapse border border-gray-800">
         <thead>
           <tr className="bg-gray-200">
+            <th className="border border-gray-800 p-2">Icon</th>
+            <th className="border border-gray-800 p-2">Name</th>
             <th className="border border-gray-800 p-2">Part</th>
             <th className="border border-gray-800 p-2">Slot</th>
-            <th className="border border-gray-800 p-2">Name</th>
-            <th className="border border-gray-800 p-2">Icon</th>
             <th className="border border-gray-800 p-2">Description</th>
             {/* Add more columns as needed */}
           </tr>
@@ -57,12 +57,12 @@ return (
         <tbody>
           {itemEquipments && itemEquipments.item_equipment && itemEquipments.item_equipment.map((item, index) => (
             <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : ''}>
-              <td className="border border-gray-800 p-2">{item.item_equipment_part}</td>
-              <td className="border border-gray-800 p-2">{item.item_equipment_slot}</td>
-              <td className="border border-gray-800 p-2">{item.item_name}</td>
               <td className="border border-gray-800 p-2">
                 <img src={item.item_icon} alt={item.item_name} className="h-8 w-8" />
               </td>
+              <td className="border border-gray-800 p-2">{item.item_name}</td>
+              <td className="border border-gray-800 p-2">{item.item_equipment_part}</td>
+              <td className="border border-gray-800 p-2">{item.item_equipment_slot}</td>
               <td className="border border-gray-800 p-2">{item.item_description}</td>
               {/* Add more columns as needed */}
             </tr>
