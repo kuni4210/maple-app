@@ -1,26 +1,25 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .yellow-highlight {
-    background-color: theme('colors.yellowHighlight');
-    color: theme('colors.brownText');
-  }
-  
-  .lime-highlight {
-    background-color: theme('colors.limeHighlight');
-  }
-  
-  .purple-highlight {
-    background-color: theme('colors.purpleHighlight');
-  }
-  
-  .sky-highlight {
-    background-color: theme('colors.skyHighlight');
-  }
+  background-color: theme("colors.yellowHighlight");
+  color: theme("colors.brownText");
+}
 
+.lime-highlight {
+  background-color: theme("colors.limeHighlight");
+}
 
-  /* const HomePage = () => {
+.purple-highlight {
+  background-color: theme("colors.purpleHighlight");
+}
+
+.sky-highlight {
+  background-color: theme("colors.skyHighlight");
+}
+
+/* const HomePage = () => {
     return (
       <div>
         <p className={`yellow-highlight ${styles.brownText}`}>노란색 형광펜, 갈색 글씨</p>
